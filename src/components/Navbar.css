@@ -1,0 +1,99 @@
+header {
+  min-height: 70px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  overflow: hidden;
+  color: white;
+  background-color: #343A40;
+  box-shadow: 0 0 25px #343A40;
+  position: sticky; 
+  top: 0; 
+  border-radius:0 0 5px 5px
+}
+header .logo a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+  font-family: "Girassol", cursive;
+}
+header nav {
+  display: flex;
+}
+nav ul li {
+  list-style: none;
+  display: inline-block;
+}
+nav ul li a {
+  text-decoration: none;
+
+  color: white;
+  padding: 0 15px;
+}
+nav ul li a:hover {
+  color: #ac0d0d;
+}
+nav .nav-cart {
+  cursor: pointer;
+  position: relative;
+  padding: 16px;
+  border-radius: 50%;
+}
+
+nav .nav-cart:hover {
+  /* border: 1px solid white; */
+  /* border-radius: 50%; */
+  transition: all 0.3s ease-out;
+}
+
+nav .nav-cart span {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background: #ac0d0d;
+  font-size: 10px;
+  color: white;
+  padding: 3px 5px;
+  border-radius: 50%;
+  z-index: 9999;
+}
+header .menu,
+header .close {
+  cursor: pointer;
+  display: none;
+}
+@media (max-width: 650px) {
+  header ul {
+    position: fixed;
+    top: -25px;
+    left: -110%;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    background: white;
+    z-index: 99;
+    opacity: 0.75;
+    transition: 0.5s linear;
+    background-color: #343a40;
+    font-size: 1.5rem;
+  }
+  header .menu,
+  header .close {
+    display: block;
+  }
+  header .close {
+    position: absolute;
+    top: 25px;
+    left: 70px;
+  }
+  header ul.toggle {
+    left: 0;
+  }
+}

@@ -1,0 +1,22 @@
+.loginWrapper{
+    font-family: "Girassol", cursive;
+    font-size: 1.5rem;
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+}
+
+.login {
+    border: 1px solid black;
+    background-color: white;
+    padding: 25px;
+    width: 300px;
+    border-radius: 10px;
+}
+
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
